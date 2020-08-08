@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="smia076.css">
+	<title>smia076</title>
+</head>
+<body>
+	<header>
+		<div class="Bar">
+			<img src="http://redsox.uoa.auckland.ac.nz/ds/logo.svg", id="logo">
+			<h2 id="titleText">Dunedin Dairy</h2>
+		</div>
+		<div class="navBar">
+			<button id="" class="topButton" onclick="homePage()"><p>Home</p></button>
+			<button id="" class="topButton" onclick="shopPage()"><p>Shop</p></button>
+			<button id="" class="topButton" onclick="newsPage()"><p>News</p></button>
+			<button id="" class="topButton" onclick="mapPage()"><p>Map</p></button>
+			<button id="" class="topButton" onclick="gBookPage()"><p>Guest Book</p></button>
+		</div>
+		
+
+		<hr class="hrLine">
+	</header>
+<div id="bodyContent">
+	<section id="homeContent">
+		<p>
+			Welcom to the Dunedin Dairy, teh leading online dairy shop in New Zealand. We take pride in sourcing the best dairy products from within New Zealand and abroad. Our shop is open 24/7, and we strive to deliver your purchases promptly.
+		</p>
+		<p>
+			Keeping in mind the safely of you and our staff, our deliveries are contactless.
+		</p>
+		<img src="https://media.npr.org/assets/img/2019/12/11/gettyimages-601185788-a678853e9c8f0c360f9a9f00d44e157d75547019-s600-c85.jpg">
+	</section>
+
+	<div id="Shop" style="display: none;">
+		<h1>Shop</h1>
+		<form>
+			<input type="text" name="search" id="shopSearch" size="40" onkeyup="searchProduct()">
+			<hr>
+		</form>
+	</div>
+
+	<div id="News" style="display: none;">
+		<h1>News</h1>
+	</div>
+
+	<div id="Map" style="display: none;">
+		<h1>Map</h1>
+		<img src="http://redsox.uoa.auckland.ac.nz/ds/map.png" id="map">
+	</div>
+
+	<div id="guestBook" style="display: none;">
+		<h1>Guest Book</h1>
+		<h2>balabalabala</h2>
+		<div>
+			<form id="gustBook">
+				<div>
+					<input type="text" name="guest" id="guestName" placeholder="Your Name here">
+					<textarea type="text" name="guest" id="message" placeholder="Your message here"></textarea> 	
+				</div>
+			</form>
+			<button id="Message" onclick="postMessage()">Post</button>
+			<div>
+					<p>Message Here!!!</p>
+					<div id="guestMessage">
+						<object id="commentBox" type="text/html" data="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/htmlcomments"></object>
+					</div>
+				</div>
+
+		</div>
+	</div>
+</div>
+	<footer style="text-align: center;">
+		<hr>
+		&reg;smia076
+	</footer>
+</body>
+<script src="smia076.js"></script>
+</html>
